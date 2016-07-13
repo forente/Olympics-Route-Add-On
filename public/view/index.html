@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = 'olympiean'>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="vendor/angular.min.js" charset="utf-8"></script>
+    <script src="js/client.js" charset="utf-8"></script>
+    <title></title>
+  </head>
+  <body ng-controller ="athlete">
+    <button type="button"  class= "btn"ng-click="getAthlete(boxersGet)" name="generate">Generate Boxer</button>
+    <button type="button"  class= "btn"ng-click="getAthlete(judoGet)" name="generate">Generate Judo Master</button>
+    <button type="button"  class= "btn"ng-click="getAthlete(fencingGet)" name="generate">Generate Fencer</button>
+    <button type="button"  class= "btn"ng-click="getAthlete(taekwondoGet)" name="generate">Generate Taekwondo Master</button>
+    <button type="button"  class= "btn"ng-click="getAthlete(wrestlingGet)" name="generate">Generate wrestling</button>
+
+  <p>
+    Name: {{athlete.Name}}
+  </p>
+  <p>
+    Origin: {{athlete.Origin}}
+  </p>
+
+  </body>
+</html>
