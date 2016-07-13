@@ -4,22 +4,24 @@
     <meta charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="vendor/angular.min.js" charset="utf-8"></script>
+    <script src="vendor/angular-route.min.js" charset="utf-8"></script>
     <script src="js/client.js" charset="utf-8"></script>
     <title></title>
+    <base href="/"/>
   </head>
-  <body ng-controller ="athlete">
-    <button type="button"  class= "btn"ng-click="getAthlete(boxersGet)" name="generate">Generate Boxer</button>
-    <button type="button"  class= "btn"ng-click="getAthlete(judoGet)" name="generate">Generate Judo Master</button>
-    <button type="button"  class= "btn"ng-click="getAthlete(fencingGet)" name="generate">Generate Fencer</button>
-    <button type="button"  class= "btn"ng-click="getAthlete(taekwondoGet)" name="generate">Generate Taekwondo Master</button>
-    <button type="button"  class= "btn"ng-click="getAthlete(wrestlingGet)" name="generate">Generate wrestling</button>
+  <body >
+    <a href="/boxing"><button type="button"  class= "btn" name="generate">Generate Boxer</button></a>
+    <a href="/judo"><button type="button"  class= "btn" name="generate">Generate Judo Master</button></a>
+    <a href="/fencing"><button type="button"  class= "btn" name="generate">Generate Fencer</button></a>
+    <a href="taekwondo"><button type="button"  class= "btn"name="generate">Generate Taekwondo Master</button></a>
+    <a href="/wrestling"><button type="button"  class= "btn" name="generate">Generate wrestling</button></a>
 
-  <p>
-    Name: {{athlete.Name}}
-  </p>
-  <p>
-    Origin: {{athlete.Origin}}
-  </p>
+
+  <div ng-view>
+
+  </div>
+
+
 
   </body>
 </html>

@@ -4,8 +4,9 @@
   "description": "Olympics-Route-Add-On",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.14.0",
-    "angular": "^1.5.7"
+    "angular": "^1.5.7",
+    "angular-router": "0.0.2",
+    "express": "^4.14.0"
   },
   "devDependencies": {},
   "scripts": {
